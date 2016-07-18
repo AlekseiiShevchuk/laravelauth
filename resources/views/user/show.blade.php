@@ -12,7 +12,7 @@
         <tbody>
 
             <tr><th>ID:</th><td>{{$user->id}}</td></tr>
-            <tr><th>FirstName</th><td>{{$user->firstName}}</td></tr>
+            <tr><th>FirstName</th><td>{{$user->name}}</td></tr>
             <tr><th>LastName</th><td>{{$user->lastName}}</td></tr>
             <tr><th>E-Mail</th><td>{{$user->email}}</td></tr>
             <tr><th>Books that the user has gotten:</th>

@@ -21,3 +21,6 @@ Route::get('/profile', 'HomeController@showProfile');
 
 Route::resource('users','UserController');
 Route::resource('books','BookController');
+
+Route::get('auth/github', 'Auth\AuthController@redirectToProvider');
+Route::get('auth/github/callback', 'Auth\AuthController@handleProviderCallback');

@@ -48,7 +48,7 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $rules = [
-            'firstName' => 'required|alpha', //alpha - поле может содержать только буквы
+            'name' => 'required|alpha', //alpha - поле может содержать только буквы
             'lastName' => 'required|alpha',
             'email' => 'required|email|unique:users',
         ];
@@ -60,7 +60,7 @@ class UserController extends Controller
                 ->withInput();
         }else{
             $user = new User();
-            $user->firstName = $request->firstName;
+            $user->name = $request->name;
             $user->lastName = $request->lastName;
             $user->email = $request->email;
             $user->save();
@@ -117,7 +117,7 @@ class UserController extends Controller
 
         $user = User::find($id);
         $rules = [
-            'firstName' => 'required|alpha', //alpha - поле может содержать только буквы
+            'name' => 'required|alpha', //alpha - поле может содержать только буквы
             'lastName' => 'required|alpha',
             'addBook' => 'exists:books,id,user_id,NULL'
         ];
@@ -135,7 +135,7 @@ class UserController extends Controller
                 ->withErrors($validator)
                 ->withInput();
         }else{
-                $user->firstName = $request->firstName;
+                $user->name = $request->name;
                 $user->lastName = $request->lastName;
                 $user->email = $request->email;
                 $user->save();

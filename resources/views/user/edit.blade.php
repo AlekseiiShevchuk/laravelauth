@@ -15,8 +15,8 @@
 
     {!! Form::model($user, ['route'=>['users.update',$user->id], 'method'=> 'PUT']) !!}
     <div class="form-group">
-        {!! Form::label('firstName', 'FirstName') !!}
-        {!! Form::text('firstName', null, ['class' => 'form-control']) !!}
+        {!! Form::label('name', 'FirstName') !!}
+        {!! Form::text('name', null, ['class' => 'form-control']) !!}
     </div>
 
     <div class="form-group">

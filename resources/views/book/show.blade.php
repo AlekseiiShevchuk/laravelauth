@@ -22,7 +22,7 @@
                 <th>User who has gotten the book:</th>
                 <td>
                     @if ($book->user)
-                        <a href="{{URL::to('users/' . $book->user->id)}}">{{$book->user->firstName}} {{$book->user->lastName}}</a>
+                        <a href="{{URL::to('users/' . $book->user->id)}}">{{$book->user->name}} {{$book->user->lastName}}</a>
                     @else
                         Book is FREE
                     @endif

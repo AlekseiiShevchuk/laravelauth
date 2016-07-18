@@ -12,7 +12,7 @@
         <thead>
         <tr>
             <td>ID</td>
-            <td>firstName</td>
+            <td>name</td>
             <td>lastName</td>
             <td>email</td>
             <td>Books that the user has gotten</td>
@@ -24,7 +24,7 @@
         @foreach($users as $user)
         <tr>
             <td>{{$user->id}}</td>
-            <td>{{$user->firstName}}</td>
+            <td>{{$user->name}}</td>
             <td>{{$user->lastName}}</td>
             <td>{{$user->email}}</td>
             <td>

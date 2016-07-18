@@ -15,8 +15,8 @@
 
    {!! Form::open(['url'=>'users']) !!}
       <div class="form-group">
-         {!! Form::label('firstName', 'FirstName') !!}
-         {!! Form::text('firstName', Input::old('firstName'), ['class' => 'form-control']) !!}
+         {!! Form::label('name', 'FirstName') !!}
+         {!! Form::text('name', Input::old('name'), ['class' => 'form-control']) !!}
       </div>
 
       <div class="form-group">

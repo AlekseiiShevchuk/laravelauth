@@ -36,8 +36,8 @@ return [
     ],
 
     'github' => [
-        'client_id' => 'your-github-app-id',
-        'client_secret' => 'your-github-app-secret',
-        'redirect' => 'http://your-callback-url',
+        'client_id' => '815801179fa8a4a421ca',
+        'client_secret' => '0cf5587c7f81d46c2c478e5112728c0901ba6cce',
+        'redirect' => 'http://laravelauth/auth/github/callback',
     ],
 ];
